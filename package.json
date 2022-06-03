@@ -1,8 +1,22 @@
 {
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "<h1><b>Table of Contents</b></h1> <ul>     <li>      <a href=\"#Collaborators\">Collaborators</a>     </li>     <li>      <a href=\"#Summary\">Summary</a>     </li>     <li>      <a href=\"#technologies\">Technologies</a>     </li>     <li>      <a href=\"#challenges\">Challenges</a>     </li>     <li>      <a href=\"#futre-development\">Future Development</a>     </li>     <li>      <a href=\"#links\">Links</a>     </li>     <li>      <a href=\"#screenshots\">Screenshots</a>     </li> </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeckyMWilson/Project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeckyMWilson/Project3/issues"
+  },
+  "homepage": "https://github.com/BeckyMWilson/Project3#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "mongodb": "^4.6.0",
-    "mongoose": "^6.3.5",
-    "node": "^17.7.2"
+    "concurrently": "^7.2.1"
   }
 }
