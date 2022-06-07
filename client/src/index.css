@@ -97,3 +97,12 @@ color: white;
   background: #125688;
   color: white;
 }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER
+@media screen and (max-width: 768px) {
+  navbar {
+    padding: 30px 15px;
+    flex: 1 100%;
+    text-align: center;
+  }
+} */
