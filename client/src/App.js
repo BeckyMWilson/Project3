@@ -1,5 +1,5 @@
-import Navbar from "./components/Header/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/header/Navbar";
+import Footer from "./components/footer";
 
 //delete this line in future
 const inlineStyle = {
@@ -18,7 +18,9 @@ function App() {
         <h1>Please delete this section </h1>
       </div>
       <br />
-      <Footer />
+      <Footer>
+
+      </Footer>
     </>
   );
 }
