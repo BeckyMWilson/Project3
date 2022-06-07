@@ -18,9 +18,7 @@ function App() {
         <h1>Please delete this section </h1>
       </div>
       <br />
-      <Footer>
-
-      </Footer>
+      <Footer />
     </>
   );
 }
