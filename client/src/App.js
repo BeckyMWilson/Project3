@@ -1,5 +1,8 @@
-import Navbar from "./components/header/Navbar";
-import Footer from "./components/footer";
+import Navbar from "./components/Header/Navbar";
+import Footer from "./components/Footer";
+import Cards from "./components/Cards"
+// import styles from "./components/cards/cards."
+// import Savecards from "./components/cards/Savecards.js"
 
 //delete this line in future
 const inlineStyle = {
@@ -18,6 +21,7 @@ function App() {
         <h1>Please delete this section </h1>
       </div>
       <br />
+      <Cards />
       <Footer>
 
       </Footer>
