@@ -44,7 +44,7 @@ const resolvers = {
       const user = await User.create(args);
       //const token = signToken(user);
       // token, <- add to return object
-      return {  user };
+      return { user };
     },
     // add login when Auth is enabled, change true to: context.user
     // add [ , context ] when Auth is enabled, [, username: context.user.username]
