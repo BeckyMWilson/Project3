@@ -19,8 +19,8 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
+  /* gap: 2rem;
+  padding: 0 1rem; */
 }
 
 .site-title {
@@ -52,6 +52,11 @@ code {
   padding: 0.25rem;
 }
 
+
+main {
+  height: calc(100vh - 123px);
+  max-height: 100vh;
+}
 /* Footer Styling  */
 
 .footer {
