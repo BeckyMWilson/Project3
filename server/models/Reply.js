@@ -25,4 +25,4 @@ const replySchema = new Schema(
     }
 );
 
-module.exports = reactionSchema;
+module.exports = replySchema;
