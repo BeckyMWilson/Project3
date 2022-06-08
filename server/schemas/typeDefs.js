@@ -45,7 +45,7 @@ const typeDefs = gql`
         me: User
         users: [User]
         user(username: String!): User
-        jargons(username: String): [jargon]
+        jargons(username: String): [Jargon]
         jargon(_id: ID!): Jargon
     }
 
