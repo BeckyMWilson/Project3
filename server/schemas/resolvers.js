@@ -31,6 +31,13 @@ const resolvers = {
         .populate('friends')
         .populate('thoughts');
     },
+    jargons: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Jargon.find(params).sort({ createdAt: -1 }); 
+    },
+    jargon: async (parent, { _id }) => {
+      return Jargon.findOne( { _id });
+    }
   },
   Mutation: {
     addUser: async (parent, args) => {
