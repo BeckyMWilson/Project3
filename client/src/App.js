@@ -1,7 +1,8 @@
-import Navbar from "./components/header/Navbar";
+import Navbar from "./components/header";
 import Footer from "./components/footer";
 
 //delete this line in future
+
 const inlineStyle = {
   height: "400px",
   backgroundColor: "blue",
@@ -13,11 +14,13 @@ function App() {
   return (
     <>
       <Navbar />
+      <main>
       <br />
       <div style={inlineStyle}>
         <h1>Please delete this section </h1>
       </div>
       <br />
+      </main>
       <Footer />
     </>
   );
