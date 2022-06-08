@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-/* Navbar styling  */
+Navbar styling 
 .nav {
   background-color: black;
   color: chartreuse;
@@ -52,17 +52,9 @@ code {
   padding: 0.25rem;
 }
 
-/* Footer Styling  */
+/* Footer Styling 
 
-.footer {
-  background-color: black;
-  color:chartreuse;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
-}
+
 
 .fa {
   padding: 5px;
@@ -95,5 +87,12 @@ color: white;
 
 .fa-instagram {
   background: #125688;
-  color: white;
+  color: white; 
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    width: 100%;
+  }
+  
 }
