@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/BeckyMWilson/Project3#readme",
   "dependencies": {
-    "concurrently": "^7.2.1"
+    "apollo-server-express": "^3.8.2",
+    "concurrently": "^7.2.1",
+    "mongoose": "^6.3.6"
   }
 }
