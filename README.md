@@ -87,8 +87,11 @@
 ### <h2><b>Challenges</b></h2>
 <ul>
  <li>
-  Learning Apollo
+ Learning Apollo
  </li>
+  <li>
+ Learning Material UI
+</li>
  <li>
  Having to deal with Jessie being out of the country and sick! ❤️
  </li>
@@ -121,11 +124,11 @@ https://github.com/BeckyMWilson/Project3
 
 ### <h2><b>Screenshots</b></h2>
 
-![Project Logo]()
+![Project Logo](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/cswlogo.png)
 
-![Kanban Page]()
+![Kanban Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/kanbanBoard.png)
 
-![Landing Page]()
+![Landing Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/loginScreen.png)
 
 
 
