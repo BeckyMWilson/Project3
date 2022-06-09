@@ -52,9 +52,9 @@ const typeDefs = gql`
     type Mutation {
         login(email: String!, password: String!): User
         addUser(username: String!, email: String!, password: String!): User
-        addJargon(jargonBody: String!, jargonDef: String!, username: String!, userId: ID!): Jargon
-        addComment(jargonId: ID!, commentText: String!, userId: ID!, username: String!): Comment
-        addReply(commentId: ID!, replyBody: String!, username: String!): Comment
+        addJargon(jargonBody: String!, jargonDef: String!): Jargon
+        addComment(jargonId: ID!, commentText: String!): Comment
+        addReply(commentId: ID!, replyBody: String!): Comment
     }
 `;
 // CHANGES NEEDED

@@ -16,7 +16,7 @@ import "./NavbarStyles.css";
 import { Link } from 'react-router-dom'
 
 
-const pages = ['Home', 'Sign up/Log in', 'Help', 'Dashboard'];
+const pages = ['Home', 'Login', 'Help', 'Dashboard'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
@@ -38,8 +38,8 @@ const Navbar = () => {
     setAnchorElUser(null);
   };
 
-  function Nav(props) {
-    
+  function Navbar(props) {
+
   }
 
   return (
@@ -97,7 +97,8 @@ const Navbar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link to={`/${page}`}>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }} to={`/${page}`}>
                       {page}
                     </Link>
                   </Typography>
@@ -131,7 +132,8 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block'}}
               >
-                <Link to={`/${page}`}>
+                <Link
+                  style={{ textDecoration: "none", color: "chartreuse" }} to={`/${page}`}>
                   {page}
                 </Link>
               </Button>

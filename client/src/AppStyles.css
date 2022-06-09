@@ -14,13 +14,19 @@ code {
 }
 
 
-
-
 main {
   height: calc(100vh - 123px);
   max-height: 100vh;
 }
 
+
+h1 {
+
+  color: white;
+  text-align: center;
+  padding: 5rem ;
+  margin: auto;  
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER
 @media screen and (max-width: 768px) {
@@ -32,10 +38,10 @@ main {
 } */
   /* color: white; 
 } */
-
+/* 
 @media screen and (max-width: 640px) {
   .footer {
     width: 100%;
   }
   
-}
+} */

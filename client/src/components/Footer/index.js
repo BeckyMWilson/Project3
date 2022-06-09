@@ -7,7 +7,7 @@ import "./FooterStyles.css";
 
 export default function Footer() {
   return (
-    
+
     <footer className="footer">
       <h2>Made by the hard-to-port team.</h2>
       <a href="https://www.facebook.com" class="fa fa-facebook" alt="facebook" target="_blank"></a>
