@@ -30,7 +30,7 @@
     padding: 0.25rem;
   }
   
-  .nav li:hover {
+  .nav li a:-webkit-any-link:hover {
     opacity: 0.7;
     height: 100%;
     display: flex;
@@ -38,11 +38,28 @@
     padding: 0.25rem;
   }  
 
-  .css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    .css-hip9hq-MuiPaper-root-MuiAppBar-root {
     background: black !important;
     color: chartreuse !important;
   }
 
-  .css-1q39md6-MuiButtonBase-root-MuiButton-root {
+  /* .css-1q39md6-MuiButtonBase-root-MuiButton-root button a {
     color: chartreuse !important;
+  } */
+
+#desktop-nav a:-webkit-any-link  {
+  
+    color: chartreuse !important;
+  }
+
+  #menu-appbar a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+  }
+
+  #desktop-nav a:-webkit-any-link:hover {
+  opacity: 0.7;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
