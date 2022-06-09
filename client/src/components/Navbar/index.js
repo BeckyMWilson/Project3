@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import "./NavbarStyles.css";
+import { Link } from 'react-router-dom'
 
 
 const pages = ['Home', 'Sign up/Log in', 'Help', 'Saved'];
@@ -57,7 +58,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-           codersSayWhat?
+            codersSayWhat?
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -91,7 +92,11 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    <Link to={`/${page}`}>
+                      {page}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -122,7 +127,9 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <Link to={`/${page}`}>
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
