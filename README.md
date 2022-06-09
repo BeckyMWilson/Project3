@@ -129,6 +129,8 @@ https://github.com/BeckyMWilson/Project3
 
 ![Landing Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/loginScreen.png)
 
+![Login Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/loginScreen.png)
+
 
 
 
