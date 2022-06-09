@@ -21,6 +21,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <main>
+
         <Routes>
 
           <Route path="/" element={<Homepage />} />
@@ -30,6 +31,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
 
         </Routes>
+
       </main>
       <Footer />
 
