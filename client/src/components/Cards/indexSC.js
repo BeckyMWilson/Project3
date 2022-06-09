@@ -5,11 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-// import ThumbUpIcon from '@material-ui/icons/ThumbUp';
-// import ThumbDownIcon from '@material-ui/icons/ThumbDown';
-import ChatIcon from '@material-ui/icons/Chat';
-import SaveIcon from '@material-ui/icons/Save';
-// import DeleteIcon from '@material-ui/icons/Delete';
+import DeleteIcon from '@material-ui/icons/Delete';
 import "./style.css";
 
 
@@ -41,8 +37,8 @@ export default function Cards() {
         
         {/* <Button size="large"><ThumbUpIcon style={{ color: "black" }}/></Button>
         <Button size="large"><ThumbDownIcon style={{ color: "black" }}/></Button> */}
-        <Button size="large"><ChatIcon style={{ color: "black" }}/></Button>
-        <Button size="large"><SaveIcon style={{ color: "black" }}/></Button>
+        <Button size="large"><DeleteIcon style={{ color: "black" }}/></Button>
+        {/* <Button size="large"><SaveIcon style={{ color: "black" }}/></Button> */}
 
       </CardActions>
     </Card>

@@ -1,5 +1,5 @@
 import React from 'react'
-//import { ExternalLink } from 'react-external-link';
+import { ExternalLink } from 'react-external-link';
 import "./FooterStyles.css";
 
 <link rel="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
