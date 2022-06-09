@@ -1,0 +1,112 @@
+
+/* .center {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  background-color: #ccffcc;
+  color: black;
+  border-radius: 15px;
+  border: 5px lightgrey;
+  border-style: groove;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-content: space-around;
+  box-shadow: 10px 10px 5px black;
+}
+
+#cards-main {
+  height: 66%;
+  width: 350px;
+}
+
+.acronym {
+  /* font-size: larger; */
+  /* font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+#acronym-def {
+  font-size: 25px;
+  margin: 10px 15px 10px 15px;
+}
+#alt-def {
+  font-size: 20px;
+  margin: 10px 15px 10px 15px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px grey;
+}
+#cards-title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#button-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: space-around; 
+  margin: 10px;
+}
+
+.button {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: grey;
+  /* display: flex; */
+  /*flex-wrap: wrap;
+  justify-items: center;
+  align-content: space-around;
+  margin: 15px;
+  box-shadow: 3px 3px 2px grey;
+} */ 
+
+.css-vf27ih-MuiPaper-root-MuiCard-root {
+  background-color: #ccffcc !important;
+  border-radius: 15px !important;
+  text-align: center !important;
+  color: black !important;
+  border: 5px lightgrey !important;
+  border-style: groove !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  align-content: space-around!important;
+  box-shadow: 10px 10px 5px black !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  
+}
+
+.css-kpm0tx-MuiButtonBase-root-MuiButton-root {
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 10px !important;
+  border: grey 5px groove!important;
+  background-color: grey !important;
+}
+
+.css-1t6e9jv-MuiCardActions-root{
+  display: flexbox !important;
+  justify-content: center !important;
+  align-content: space-around !important;
+}
+.css-ag7rrr-MuiTypography-root {
+  text-transform:uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+  /* display: flex; */
+  /*flex-wrap: wrap;
+  justify-items: center;
+  align-content: space-around;
+  margin: 15px;
+  box-shadow: 3px 3px 2px grey;
+}*/
