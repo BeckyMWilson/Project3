@@ -2,7 +2,6 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const { authMiddleware } = require('./utils/auth');
 const path = require('path')
-
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
@@ -12,6 +11,7 @@ const server = new ApolloServer({
     resolvers,
     context: authMiddleware
 });
+const app = express()
 
 const app = express();
 
@@ -44,9 +44,15 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
+<<<<<<< Updated upstream
 // app.get('*', (req, res) => {
 //     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 // });
+=======
+//app.get('*', (req, res) => {
+  //  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+//});
+>>>>>>> Stashed changes
 
 // log mongo queries that are executed
 // mongoose.set('debug', true);

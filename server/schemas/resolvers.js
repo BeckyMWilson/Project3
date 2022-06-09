@@ -23,7 +23,12 @@ const resolvers = {
         .select('-__v -password')
         .populate('submissions')
         .populate('comments');
-    },
+
+      },
+      // get all jargons
+      jargons: async () => {
+        return Jargon.find()
+      },
     // get a user by username
     user: async (parent, { username }) => {
       return User.findOne({ username })
