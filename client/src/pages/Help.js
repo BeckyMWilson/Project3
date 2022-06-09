@@ -5,7 +5,7 @@ const Help = () => {
   return (
     <div>
 
-      <h1>Homepage</h1>
+      <h1>Help</h1>
 
     </div>
   )

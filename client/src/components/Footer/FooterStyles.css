@@ -3,7 +3,12 @@
 .footer {
   background-color: black;
   color: chartreuse;
+  display: flex;
   justify-content:flex-end;
+}
+
+.footer h2 {
+  flex: 1
 }
 
 .fa {
@@ -14,6 +19,8 @@
   text-decoration: none;
   margin: 10px 10px;
   border-radius: 25%;
+  height:fit-content;
+  align-self: center;
 }
 
 .fa:hover {
@@ -40,10 +47,5 @@ color: white;
   color: white;
 }
 
-.flex-container {
-  
-  display: flex;
-  flex-direction: row;
-  justify-content:flex-end; 
-}
+
 

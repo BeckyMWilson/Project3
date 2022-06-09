@@ -9,27 +9,27 @@ import Dashboard from "./pages/Dashboard";
 
 import "./AppStyles.css";
 
-// const inlineStyle = {
-//   height: "400px",
-//   backgroundColor: "blue",
-//   color: "white",
-//   margin: "10px",
-// };
+const inlineStyle = {
+  height: "400px",
+  backgroundColor: "blue",
+  color: "white",
+  margin: "10px",
+};
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <main>
-      <Routes>
+        <Routes>
 
-        <Route path="/" element={<Homepage />} />
-        <Route path="/homepage" element={<Homepage />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/login" element={<LogIn />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-   
-      </Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/home" element={<Homepage />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/login" element={<LogIn />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
+        </Routes>
       </main>
       <Footer />
 
