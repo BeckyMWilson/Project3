@@ -60,28 +60,27 @@
    <li>
     VS Code (Visual Studio Code)
    </li>
-   <li>
-    Apollo
-   </li>
-   <li>
-   </li>
-   <li>
-   </li>
-   <li>
-   </li>
  </ul>
 
 <h3>Techniques Used to Design Application:</h3>
  <ul>
    <li>
-   </li>
-   <li>    
-   </li>
-   <li>
-   </li>
-   <li>  
+    Apollo
    </li>
    <li>
+   Mongoose
+   </li>
+   <li>
+   GraphQL
+   </li>
+   <li>
+   bcrypt
+   </li>
+   <li>
+   Express
+   </li>
+   <li>
+   JSON
    </li>
  </ul>
 
@@ -91,22 +90,21 @@
   Learning Apollo
  </li>
  <li>
+ Having to deal with Jessie being out of the country and sick! ❤️
  </li>
 </ul>
 
 ### <h2><b>Future Development</b></h2>
 <ul>
  <li>
+ Add the ability to save
  </li>
  <li>
+ Make avatar responsive to login
  </li>
  <li>
+ Add profile, acount, and dashboard to avatar menu
  </li>
- <li>
- </li>
- <li>
- </li>
- <li>
 </ul>
 
 ### <h2><b>Links</b></h2>
@@ -117,7 +115,7 @@
  </li>
  <li>
    <h3>GitHub URL:</h3>
-
+https://github.com/BeckyMWilson/Project3
  </li>
 </ul>
 

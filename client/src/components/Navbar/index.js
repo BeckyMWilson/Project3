@@ -13,11 +13,12 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import "./NavbarStyles.css";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import navlogo from "../../assets/images/cswlogo.png"
 
-
-const pages = ['Home', 'Login', 'Help', 'Dashboard'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Home', 'Login', 'Dashboard', 'Help'];
+// Future development add to settings 'Profile', 'Account', 'Dashboard'
+const settings = ['Logout'];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -62,7 +63,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            codersSayWhat?
+          <img src= { navlogo } width={50} height={50} style={{textAlign: "inline"}} alt='Logo image' /> codersSayWhat?
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -143,7 +144,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
