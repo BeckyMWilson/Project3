@@ -3,17 +3,24 @@
 .footer {
   background-color: black;
   color: chartreuse;
-  justify-content: space-between;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.footer h2 {
+  flex: 1
 }
 
 .fa {
   padding: 5px;
   font-size: 30px;
-  width: 30px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 10px 10px;
   border-radius: 25%;
+  height:fit-content;
+  align-self: center;
 }
 
 .fa:hover {
@@ -39,3 +46,6 @@ color: white;
   background: #125688;
   color: white;
 }
+
+
+
