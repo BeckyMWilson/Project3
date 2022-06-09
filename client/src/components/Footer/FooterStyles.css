@@ -9,10 +9,10 @@
 .fa {
   padding: 5px;
   font-size: 30px;
-  width: 30px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 10px 10px;
   border-radius: 25%;
 }
 
@@ -39,3 +39,11 @@ color: white;
   background: #125688;
   color: white;
 }
+
+.flex-container {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end; 
+}
+
