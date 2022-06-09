@@ -46,7 +46,6 @@
    <li>
     CSS
    </li>
-   <li>
 </ul>
 
 <h3>Development Tools:</h3>
