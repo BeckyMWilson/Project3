@@ -38,9 +38,9 @@ const LogIn = () => {
             Forgot Password
           </Link>
         </Typography>
-        <Typography> Do you have an account?
+        <Typography> Don't have an account?
           <Link href="#">
-            Sing Up!
+            Sign Up!
           </Link>
         </Typography>
 
