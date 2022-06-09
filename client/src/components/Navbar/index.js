@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import "./NavbarStyles.css";
 
 
-const pages = ['Home', 'Sign up/Log in', 'Help', 'Saved'];
+const pages = ['Home', 'Sign up/Log in', 'Help', 'Dashboard'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
