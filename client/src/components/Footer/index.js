@@ -13,7 +13,7 @@ export default function Footer() {
       <a href="#" class="fa fa-facebook" alt="facebook"></a>
       <a href="#" class="fa fa-twitter" alt="twitter"></a>
       <a href="#" class="fa fa-linkedin" alt="linkedin"></a>
-      <ExternalLink href="https://www.instagram.com" class="fa fa-instagram" alt="instagram" />
+      {/* <ExternalLink href="https://www.instagram.com" class="fa fa-instagram" alt="instagram" /> */}
     </footer>
 
   );
