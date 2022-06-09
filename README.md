@@ -34,14 +34,17 @@
 - John Fulghieri - https://github.com/SrGiovanni
 
 ### <h2><b>Summary</b></h2>
-<h3></h3>
+<h3>Decoding the code! A place people can come to decode the acronyms and technical jargon developers and other computer professionals use.
+</h3>
 
 ### <h2><b>Technologies</b></h2>
 <h3>Design Tools:</h3>
  <ul>
    <li>
+    Material UI
    </li>
    <li>
+    CSS
    </li>
    <li>
 </ul>
@@ -49,12 +52,16 @@
 <h3>Development Tools:</h3>
  <ul>
    <li>
+    GitHub
    </li>
    <li>
+    Chrome Developer Tools (DevTools)
    </li>
    <li>
+    VS Code (Visual Studio Code)
    </li>
    <li>
+    Apollo
    </li>
    <li>
    </li>
@@ -81,6 +88,7 @@
 ### <h2><b>Challenges</b></h2>
 <ul>
  <li>
+  Learning Apollo
  </li>
  <li>
  </li>
