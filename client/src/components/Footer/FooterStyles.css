@@ -4,6 +4,10 @@
   background-color: black;
   color: chartreuse;
   display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
   justify-content:flex-end;
 }
 
