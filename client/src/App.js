@@ -11,7 +11,7 @@ import "./AppStyles.css";
 
 const inlineStyle = {
   height: "400px",
-  backgroundColor: "black",
+  backgroundColor: "blue",
   color: "white",
   margin: "10px",
 };
@@ -21,15 +21,17 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <main>
+
         <Routes>
 
           <Route path="/" element={<Homepage />} />
-          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/home" element={<Homepage />} />
           <Route path="/help" element={<Help />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/dashboard" element={<Dashboard />} />
 
         </Routes>
+
       </main>
       <Footer />
 

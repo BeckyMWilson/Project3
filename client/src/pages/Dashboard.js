@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Cards from '../components/Cards/indexSC.js'
 
 
 const Dashboard = () => {
@@ -7,6 +7,7 @@ const Dashboard = () => {
     <div>
 
       <h1>Dashboard</h1>
+      <Cards />
 
 
     </div>
