@@ -11,7 +11,7 @@ import "./AppStyles.css";
 
 const inlineStyle = {
   height: "400px",
-  backgroundColor: "black",
+  backgroundColor: "blue",
   color: "white",
   margin: "10px",
 };
