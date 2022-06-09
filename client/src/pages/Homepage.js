@@ -1,12 +1,15 @@
 import React from 'react';
-import "./Styles.css";
+
+import Cards from '../components/Cards'
+
 
 const Homepage = () => {
   return (
     <div>
 
       <h1>Homepage</h1>
-      <div className='card-holder'>This is a card container</div>
+
+      <Cards />
 
     </div>
   )
