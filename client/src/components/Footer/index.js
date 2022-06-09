@@ -6,14 +6,13 @@ import "./FooterStyles.css";
 
 export default function Footer() {
   return (
+    
     <footer className="footer">
-
       <h2>Made by the hard-to-port team.</h2>
       <a href="#" class="fa fa-facebook" alt="facebook"></a>
       <a href="#" class="fa fa-twitter" alt="twitter"></a>
       <a href="#" class="fa fa-linkedin" alt="linkedin"></a>
       <a href="#" class="fa fa-instagram" alt="instagram"></a>
-
     </footer>
 
   );
