@@ -28,6 +28,18 @@ h1 {
   margin: auto;  
 }
 
+
+#help {
+  border: 2px solid black;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  background: white;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER
 @media screen and (max-width: 768px) {
   navbar {
