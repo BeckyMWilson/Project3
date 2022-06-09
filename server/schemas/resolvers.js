@@ -1,11 +1,11 @@
 const { Comment, Jargon, User } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
-//const { signToken } = require('../utils/auth');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     // uncomment following when Auth middleware is implemented
-    /* me: async (parent, args, context) => {
+    me: async (parent, args, context) => {
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
           .select('-__v -password')
@@ -16,7 +16,7 @@ const resolvers = {
       }
     
       throw new AuthenticationError('Not logged in');
-      }, */
+      },
     // get all users
     users: async () => {
         return User.find()
@@ -43,30 +43,47 @@ const resolvers = {
     addUser: async (parent, args) => {
       console.log(args)
       const user = await User.create(args);
-      //const token = signToken(user);
-      // token, <- add to return object
-      return { user };
+      const token = signToken(user);
+
+      return { token, user };
     },
-    // add login when Auth is enabled, change true to: context.user
+    // login function
+    login: async (parent, { email, password } ) => {
+      const user = await User.findOne({ email });
+    
+      if (!user) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+    
+      const correctPw = await user.isCorrectPassword(password);
+    
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+    
+      const token = signToken(user);
+      return { token, user };
+    },
     // add [ , context ] when Auth is enabled, [, username: context.user.username]
-    addJargon: async (parent, args) => {
-      // if(true){
-        const jargon = await Jargon.create({ ...args });
+    addJargon: async (parent, args, context ) => {
+      if( context.user ){
+        const jargon = await Jargon.create({ ...args, username: context.user.username });
         
         console.log(jargon);  
         await User.findByIdAndUpdate(
-          { _id: args.userId },
+          { _id: context.userId },
           { $push: { submissions: jargon._id } },
           { new: true }
-          );
+        );
           
-          return jargon;
-      // }
-      // throw new AuthenticationError('You need to be logged in!');
+        return jargon;
+      }
+
+      throw new AuthenticationError('You need to be logged in!');
     },
-    addComment: async (parent, { commentText, jargonId, userId, username } ) => {
-      if(true) {
-        const comment = await Comment.create({ commentText, username })
+    addComment: async (parent, { commentText, jargonId }, context ) => {
+      if( context.user ) {
+        const comment = await Comment.create({ commentText, username: context.user.username })
         
         await Jargon.findByIdAndUpdate(
           { _id: jargonId },
@@ -75,7 +92,7 @@ const resolvers = {
         );
 
         await User.findByIdAndUpdate(
-          { _id: userId },
+          { _id: context.user.userId },
           { $push: { comments: comment._id } },
           { new: true }
         );
@@ -85,11 +102,11 @@ const resolvers = {
 
       throw new AuthenticationError('You need to be logged in!');
     },
-    addReply: async (parent, { commentId, replyBody, username } ) => {
-      if(true) {
+    addReply: async (parent, { commentId, replyBody }, context ) => {
+      if( context.user ) {
         const updatedComment = await Comment.findOneAndUpdate(
           { _id: commentId },
-          { $push: { replies: { replyBody, username } } },
+          { $push: { replies: { replyBody, username: context.user.username } } },
           { new: true, runValidators: true }
         );
 
