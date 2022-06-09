@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   function Nav(props) {
-    
+
   }
 
   return (
@@ -97,7 +97,8 @@ const Navbar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link to={`/${page}`}>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }} to={`/${page}`}>
                       {page}
                     </Link>
                   </Typography>
@@ -131,7 +132,8 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link to={`/${page}`}>
+                <Link
+                  style={{ textDecoration: "none", color: "chartreuse" }} to={`/${page}`}>
                   {page}
                 </Link>
               </Button>
