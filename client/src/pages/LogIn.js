@@ -40,7 +40,7 @@ const LogIn = () => {
         </Typography>
         <Typography> Do you have an account?
           <Link href="#">
-            Sing Up!
+            Sign Up!
           </Link>
         </Typography>
 

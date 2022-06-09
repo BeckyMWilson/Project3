@@ -1,0 +1,11 @@
+.card-holder {
+  color: white;
+  text-align: center;
+  background-color: black;
+  flex-direction: column;
+  padding: 8rem 1rem;
+  margin: auto;
+  max-width: 400px;
+
+}
+
