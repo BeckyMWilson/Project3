@@ -16,7 +16,7 @@ import "./NavbarStyles.css";
 import { Link } from 'react-router-dom'
 
 
-const pages = ['Home', 'Sign up/Log in', 'Help', 'Dashboard'];
+const pages = ['Home', 'Login', 'Help', 'Dashboard'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
     setAnchorElUser(null);
   };
 
-  function Nav(props) {
+  function Navbar(props) {
 
   }
 
