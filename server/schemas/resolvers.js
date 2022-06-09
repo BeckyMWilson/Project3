@@ -9,8 +9,8 @@ const resolvers = {
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
           .select('-__v -password')
-          .populate('thoughts')
-          .populate('friends');
+          .populate('submissions')
+          .populate('comments');
     
         return userData;
       }
@@ -28,8 +28,8 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username })
         .select('-__v -password')
-        .populate('friends')
-        .populate('thoughts');
+        .populate('submissions')
+        .populate('comments');
     },
     jargons: async (parent, { username }) => {
       const params = username ? { username } : {};
