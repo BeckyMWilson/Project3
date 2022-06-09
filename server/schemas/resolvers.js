@@ -1,4 +1,4 @@
-const { Comment, Jargon, User, Reply } = require('../models');
+const { Comment, Jargon, User } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 //const { signToken } = require('../utils/auth');
 
@@ -41,6 +41,7 @@ const resolvers = {
   },
   Mutation: {
     addUser: async (parent, args) => {
+      console.log(args)
       const user = await User.create(args);
       //const token = signToken(user);
       // token, <- add to return object
@@ -48,19 +49,20 @@ const resolvers = {
     },
     // add login when Auth is enabled, change true to: context.user
     // add [ , context ] when Auth is enabled, [, username: context.user.username]
-    addJargon: async ( parent, args  ) => {
-      if(true){
-        const jargon = await Jargon.create( { ...args } );
-
+    addJargon: async (parent, args) => {
+      // if(true){
+        const jargon = await Jargon.create({ ...args });
+        
+        console.log(jargon);  
         await User.findByIdAndUpdate(
           { _id: args.userId },
           { $push: { submissions: jargon._id } },
           { new: true }
-        );
-
-        return jargon;
-      }
-      throw new AuthenticationError('You need to be logged in!');
+          );
+          
+          return jargon;
+      // }
+      // throw new AuthenticationError('You need to be logged in!');
     },
     addComment: async (parent, { commentText, jargonId, userId, username } ) => {
       if(true) {
