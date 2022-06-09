@@ -9,12 +9,12 @@ import Dashboard from "./pages/Dashboard";
 
 import "./AppStyles.css";
 
-const inlineStyle = {
-  height: "400px",
-  backgroundColor: "blue",
-  color: "white",
-  margin: "10px",
-};
+// const inlineStyle = {
+//   height: "400px",
+//   backgroundColor: "blue",
+//   color: "white",
+//   margin: "10px",
+// };
 
 function App() {
   return (

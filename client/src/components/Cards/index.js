@@ -38,7 +38,7 @@ export default function Cards() {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="large"><DeleteIcon style={{ color: "black" }}/></Button> */}
+        
         <Button size="large"><ThumbUpIcon style={{ color: "black" }}/></Button>
         <Button size="large"><ThumbDownIcon style={{ color: "black" }}/></Button>
         <Button size="large"><ChatIcon style={{ color: "black" }}/></Button>
