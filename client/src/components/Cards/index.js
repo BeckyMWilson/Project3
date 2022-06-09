@@ -5,6 +5,13 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ThumbDownIcon from '@material-ui/icons/ThumbDown';
+import ChatIcon from '@material-ui/icons/Chat';
+import SaveIcon from '@material-ui/icons/Save';
+// import DeleteIcon from '@material-ui/icons/Delete';
+import "./style.css";
+
 
 const bull = (
   <Box
@@ -19,23 +26,24 @@ export default function Cards() {
   return (
     <Card sx={{ minWidth: 275, maxWidth: 350 }}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography>
+        
         <Typography variant="h5" component="div">
-          be{bull}nev{bull}o{bull}lent
+          jargonBody
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
+          jargonDef
         </Typography>
         <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+          Comment here.          
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        {/* <Button size="large"><DeleteIcon style={{ color: "black" }}/></Button> */}
+        <Button size="large"><ThumbUpIcon style={{ color: "black" }}/></Button>
+        <Button size="large"><ThumbDownIcon style={{ color: "black" }}/></Button>
+        <Button size="large"><ChatIcon style={{ color: "black" }}/></Button>
+        <Button size="large"><SaveIcon style={{ color: "black" }}/></Button>
+
       </CardActions>
     </Card>
   );
