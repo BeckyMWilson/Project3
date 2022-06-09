@@ -22,6 +22,7 @@
   "homepage": "https://github.com/BeckyMWilson/Project3#readme",
   "dependencies": {
     "concurrently": "^7.2.1",
+    "react-external-link": "^2.0.0",
     "react-responsive": "^9.0.0-beta.10"
   }
 }
