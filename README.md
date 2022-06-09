@@ -127,7 +127,7 @@ https://github.com/BeckyMWilson/Project3
 
 ![Kanban Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/kanbanBoard.png)
 
-![Landing Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/loginScreen.png)
+![Landing Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/landingPage.png)
 
 ![Login Page](https://github.com/BeckyMWilson/Project3/blob/main/client/src/assets/images/loginScreen.png)
 
