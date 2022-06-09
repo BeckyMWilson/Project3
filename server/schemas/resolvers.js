@@ -62,9 +62,9 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    addComment: async (parent, { commentBody, jargonId, userId, username } ) => {
+    addComment: async (parent, { commentText, jargonId, userId, username } ) => {
       if(true) {
-        const comment = await Comment.create({ commentBody, username })
+        const comment = await Comment.create({ commentText, username })
         
         await Jargon.findByIdAndUpdate(
           { _id: jargonId },
