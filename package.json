@@ -1,7 +1,7 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "description": "<h1><b>Table of Contents</b></h1> <ul>     <li>      <a href=\"#Collaborators\">Collaborators</a>     </li>     <li>      <a href=\"#Summary\">Summary</a>     </li>     <li>      <a href=\"#technologies\">Technologies</a>     </li>     <li>      <a href=\"#challenges\">Challenges</a>     </li>     <li>      <a href=\"#futre-development\">Future Development</a>     </li>     <li>      <a href=\"#links\">Links</a>     </li>     <li>      <a href=\"#screenshots\">Screenshots</a>     </li> </ul>",
+  "description": "Decoding the code! A place people can come to decode the acronyms and technical jargon developers and other computer professionals use.",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

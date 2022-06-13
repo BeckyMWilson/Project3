@@ -41,11 +41,12 @@ const startApolloServer = async (typeDefs, resolvers) => {
 // Serve up static assets
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
+    
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    });
 }
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../client/build/index.html'));
-// });
 
 // log mongo queries that are executed
 // mongoose.set('debug', true);
