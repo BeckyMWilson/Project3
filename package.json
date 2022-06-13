@@ -1,6 +1,9 @@
 {
   "name": "project3",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "Decoding the code! A place people can come to decode the acronyms and technical jargon developers and other computer professionals use.",
   "main": "server/server.js",
   "scripts": {
