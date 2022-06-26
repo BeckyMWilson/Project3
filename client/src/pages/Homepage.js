@@ -19,8 +19,9 @@ const mockData = [
 
 const Homepage = () => {
   const {loading, data} = useQuery(QUERY_JARGONS)
-  const jargonData = data?.jargons
-  console.log(data)
+  // const jargonData = data?.jargons
+  const jargonData = mockData
+  // console.log(data)
   return (
     <div style={{ paddingBottom: "200px"}}> 
 
