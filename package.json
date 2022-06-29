@@ -1,11 +1,12 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.x"
-  },
   "description": "Decoding the code! A place people can come to decode the acronyms and technical jargon developers and other computer professionals use.",
   "main": "server/server.js",
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
@@ -32,9 +33,5 @@
     "mongoose": "^6.3.6",
     "react-external-link": "^2.0.0",
     "react-responsive": "^9.0.0-beta.10"
-  },
-  "engines": {
-    "node": "16.14.0",
-    "npm": "8.3.1"
   }
 }
